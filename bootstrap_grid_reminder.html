@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Bootstrap Grid Examples</title>
+    <style>
+      .bs .row > .col, .bs .row > [class^="col-"] {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+      }
+      .flex-cols {
+        min-height: 10rem;
+        background-color: #ccc;
+      }
+      body {
+        margin-bottom: 100px;
+        /*background-color: #ffffe6;*/
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    
+  <div class="bs">
+    <div class="container">
+      <h3 class="mt-5">Колонки одинаковой ширины</h3>
+      <hr>
+      <div class="row">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+      </div>
+
+      <h3 class="mt-5">Установка ширины одного столбца</h3>
+      <hr>
+      <div class="row">
+        <div class="col">Sidebar 1</div>
+        <div class="col-6">Content</div>
+        <div class="col">Sidebar 2</div>
+      </div>
+      
+      <h3 class="mt-5">Содержание переменной ширины</h3>
+      <hr>
+      <div class="row">
+        <div class="col">Sidebar 1</div>
+        <div class="col-6">Content</div>
+        <div class="col-auto">Sidebar 2</div>
+      </div>
+
+      <h3 class="mt-5">Колонки одинаковой ширины в несколько строк</h3>
+      <hr>
+      <div class="row">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="w-100"></div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+      </div>
+
+      <h3 class="mt-5">Breakpoints. Складывание колонок по горизонтали</h3>
+      <hr>
+      <div class="row">
+        <div class="col-sm">1</div>
+        <div class="col-sm">2</div>
+        <div class="col-sm">3</div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">Sidebar 1</div>
+        <div class="col-md-8">Content</div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-3">Sidebar 1</div>
+        <div class="col-md-6">Content</div>
+        <div class="col-md-3">Sidebar 2</div>
+      </div>
+
+      <h3 class="mt-5">Breakpoints. Комбинирование классов</h3>
+      <hr>
+      <div class="row">
+        <div class="col-sm-4 col-md-3">Sidebar 1</div>
+        <div class="col-sm-8 col-md-6">Content</div>
+        <div class="col-md-3">Sidebar 2</div>
+      </div>
+
+      <h3 class="mt-5">Переполнение ряда</h3>
+      <hr>
+      <div class="row">
+        <div class="col-sm-4 col-md-3">Sidebar 1</div>
+        <div class="col-sm-8 col-md-6">Content</div>
+        <div class="col-md-4">Sidebar 2</div>
+      </div>
+
+      <h3 class="mt-5">Сброс отступов</h3>
+      <hr>
+      <div class="row no-gutters">
+        <div class="col-sm-4 col-md-3">Sidebar 1</div>
+        <div class="col-sm-8 col-md-6">Content</div>
+        <div class="col-md-3">Sidebar 2</div>
+      </div>
+
+      <h3 class="mt-5">Выравнивание ряда по вертикали</h3>
+      <hr>
+      <div class="row flex-cols">
+        <div class="col">Content 1</div>
+        <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero itaque aliquid, praesentium iure harum reiciendis debitis asperiores ex iste odit.</div>
+        <div class="col">Content 3</div>
+      </div>
+      <hr>
+      <div class="row align-items-start flex-cols">
+        <div class="col">align-items-start</div>
+        <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="col">align-items-start</div>
+      </div>
+      <hr>
+      <div class="row align-items-center flex-cols">
+        <div class="col">align-items-center</div>
+        <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="col">align-items-center</div>
+      </div>
+      <hr>
+      <div class="row align-items-end flex-cols">
+        <div class="col">align-items-end</div>
+        <div class="col">Content 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="col">align-items-end</div>
+      </div>
+      <hr>
+      <div class="row flex-cols">
+        <div class="col align-self-start">align-self-start</div>
+        <div class="col align-self-center">align-self-center</div>
+        <div class="col align-self-end">align-self-end</div>
+      </div>
+
+      <h3 class="mt-5">Выравнивание ряда по горизонтали</h3>
+      <hr>
+      <div class="row justify-content-start">
+        <div class="col-4">justify-content-start</div>
+        <div class="col-4">justify-content-start</div>
+      </div>
+      <hr>
+      <div class="row justify-content-center">
+        <div class="col-4">justify-content-center</div>
+        <div class="col-4">justify-content-center</div>
+      </div>
+      <hr>
+      <div class="row justify-content-end">
+        <div class="col-4">justify-content-end</div>
+        <div class="col-4">justify-content-end</div>
+      </div>
+      <hr>
+      <div class="row justify-content-around">
+        <div class="col-4">justify-content-around</div>
+        <div class="col-4">justify-content-around</div>
+      </div>
+      <hr>
+      <div class="row justify-content-between">
+        <div class="col-4">justify-content-between</div>
+        <div class="col-4">justify-content-between</div>
+      </div>
+
+      <h3 class="mt-5">Изменение порядка</h3>
+      <h3>Классы сортировки</h3>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 order-md-2">Content</div>
+        <div class="col-md-3 order-md-1">Sidebar 1</div>
+        <div class="col-md-3 order-md-3">Sidebar 2</div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 ">Content</div>
+        <div class="col-md-3 order-md-first">Sidebar 1</div>
+        <div class="col-md-3">Sidebar 2</div>
+      </div>
+
+      <h3 class="mt-5">Отступы</h3>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">Header</div>
+      </div>
+
+      <h3 class="mt-5">Классы-помощники отступов</h3>
+      <hr>
+      <div class="row">
+        <div class="col-md-3 m-auto">Header</div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-3 mr-auto ml-auto">Header</div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-3 mr-auto">Content</div>
+        <div class="col-md-3">Content</div>
+      </div>
+
+      <h3 class="mt-5">Вложенность сеток</h3>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">Sidebar</div>
+        <div class="col-md-8 ">
+          Content
+          <div class="row">
+            <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, provident.</div>
+            <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, optio.</div>
+            <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, accusantium!</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
