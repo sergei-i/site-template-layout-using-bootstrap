@@ -258,7 +258,85 @@ h4 {
 	box-shadow: 0 14px 30px -15px rgba(0,0,0,.75);
 }
 
+/*.section-reviews*/
+.section-reviews {
+	background: url('../img/reviews_bg.jpg') center no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	padding-bottom: 0;
+}
 
+.section-reviews .carousel-caption {
+	top: 5%;
+	bottom: auto;
+	text-align: left;
+}
+
+.section-reviews .blockquote {
+	font-style: italic;
+	font-weight: 500;
+	font-size: 22px;
+	position: relative;
+	padding-left: 40px;
+	margin-top: 70px;
+}
+
+.section-reviews .blockquote::before {
+	content: '\201C';
+	float: left;
+	font-size: 150px;
+	font-weight: 500;
+	font-style: italic;
+	color: #f42267;
+	position: absolute;
+	top: -80px;
+	left: -33px;
+}
+
+/*.section-form*/
+.section-form {
+	background: url(../img/form_bg.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff
+}
+
+.section-form h5 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.section-form form {
+	margin-top: 50px;
+}
+
+.section-form .btn-violet {
+	background: #4b2d7f;
+	box-shadow: 0 7px 0px #a57ee9;
+}
+
+.section-form .btn-violet:hover {
+	background: #3a2362;
+	box-shadow: 0 5px 0px #a57ee9;
+}
+
+.section-form .form-control {
+	height: 51px;
+	background-color: rgba(255,255,255,.35);
+	color: #fff;
+	border: 0;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 20px;
+}
+
+.section-form .form-control::placeholder {
+	color: #fff;
+}
+
+.section-form .form-control:focus {
+	box-shadow: 0 0 0 .2rem rgba(255,255,255,.25);
+}
 
 
 
@@ -270,8 +348,25 @@ h4 {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+
 	.main-header-text{
 		background-color: rgba(0,0,0,.3);
+	}
+
+	.section-reviews h3,
+	.section-reviews h4 {
+		font-size: 25px;
+	}
+
+	.section-reviews .blockquote {
+		font-size: 17px;
+		padding-left: 20px;
+		margin-top: 40px;
+	}
+
+	.section-reviews .blockquote::before {
+		font-size: 100px;
+		top: -40px;
 	}
 }
 
@@ -288,7 +383,6 @@ h4 {
 		padding: 50px 0;
 	}
 }
-
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -330,6 +424,14 @@ h4 {
 		border-radius: 10px;
 		padding: 10px 15px;
 		transition: all .5s;
+	}
+}
+
+@media only screen and (max-width : 576px) {
+	.section-reviews .carousel-caption {
+		position: static;
+		width: 70%;
+		margin: auto;
 	}
 }
 
