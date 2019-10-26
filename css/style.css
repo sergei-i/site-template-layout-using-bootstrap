@@ -107,16 +107,90 @@ h4 {
 	background-color: #69328e;
 }
 
+/*.section-watch*/
+.section-watch {
+	background: url(../img/world_map.png) center no-repeat;
+	background-size: cover;
+}
 
+.section-watch h3,
+.section-watch h4 {
+	color: #484848;
+}
 
+.section-watch .nav-pills {
+	margin-bottom: 20px;
+}
 
+.section-watch .nav-pills .nav-link {
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 14px 30px;
+	color: #484848;
+}
 
+.section-watch .nav-pills .nav-item .nav-link.active {
+	background-color: #f42267;
+	color: #fff;
+	box-shadow: 0 4px 16px rgba(0,0,0,.35);
+}
 
+.btn-shadow {
+	box-shadow: 0 10px 0 #ff5990;
+	border-radius: 10px;
+	padding: 10px 25px;
+	transition: all .5s;
+}
 
+.btn-shadow:hover {
+	box-shadow: 0 5px 0 #ff5990;
+	color: #fff;
+	background-color: #da1757;
+}
 
+/*.section-progress*/
+.section-progress {
+	background-color: #4b2d7f;
+	color: #fff;
+	font-size: 15px;
+}
 
+.section-progress i {
+	font-size: 60px;
+	padding: 0;
+}
 
+.section-progress .num {
+	font-size: 50px;
+	font-weight: 600;
+	margin: 30px 0 20px;
+}
 
+.section-progress h4 {
+	font-size: 30px;
+	height: 70px;
+	overflow: hidden;
+}
+
+.section-progress .progress-item {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	transition: all .5s;
+}
+
+.section-progress .progress-item:hover {
+	background-color: #40286a;
+}
+
+/*.section-letsgrow*/
+.section-letsgrow {
+	background: url(../img/letsgrow.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
 
 
 /* Large Devices, Wide Screens */
@@ -132,47 +206,77 @@ h4 {
 }
 
 @media only screen and (max-width : 991px) {
+
 	.navbar-nav{
 		background: linear-gradient(45deg, #ed1b33 0%,#442e82 100%);
 		position: relative;
 		z-index: 1;
 		padding: 0 15px;
 	}
+
+	section {
+		padding: 50px 0;
+	}
 }
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
 	.main-header-text{
 		left: 0;
 		margin: 0 20px;
 		max-width: 100%;
 	}
+
 	h3, h4{
 		font-size: 30px;
+	}
+
+	.section-progress .progress-item {
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 
 @media only screen and (max-width : 600px) {
+
 	.main-header-text{
 		top: 90px;
 	}
+
 	.main-header-buttons .btn{
 		display: block;
 		width: 100%;
 		margin-bottom: 15px;
 	}
+
 	.main-header-buttons .btn:last-child{
 		margin-top: 0;
+	}
+
+	.btn-shadow {
+		box-shadow: 0 5px 0 #ff5990;
+		border-radius: 10px;
+		padding: 10px 15px;
+		transition: all .5s;
 	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-	
+
+	.section-watch .nav-pills .nav-item {
+		width: 100%;
+	}
+
+	.section-watch .nav-pills .nav-link {
+		padding: 10px 16px;
+	}
 }
 
 @media only screen and (max-width : 380px) {
+
 	.main-header .navbar-brand{
 		font-size: 30px;
 	}
